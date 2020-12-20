@@ -77,6 +77,7 @@ export default {
   font-size: 2rem;
 }
 .nav-bar__intials {
+  color: #cbffe5;
   background: inherit;
   font-size: 1.5rem;
   transition: all 300ms;
