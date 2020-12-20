@@ -1,6 +1,8 @@
 <template>
   <div class="nav-bar">
-    <div class="nav-bar__left"></div>
+    <div class="nav-bar__left">
+      <div class="nav-bar__logo">{ <span class="nav-bar__intials">HB</span> }</div>
+    </div>
     <div class="nav-bar__right">
       <a href="#about" class="nav-bar__link">
         <span class="nav-bar__link-number">01. </span>
@@ -59,7 +61,33 @@ export default {
   backdrop-filter: blur(0.5rem);
 }
 .nav-bar__left {
-  //width: 10%;
+  align-items: center;
+  padding-left: 1rem;
+  background: #101314;
+  display: flex;
+  align-self: center;
+}
+.nav-bar__logo {
+  background: inherit;
+  font-size: 1.5rem;
+  transition: all 300ms;
+  cursor: pointer;
+}
+.nav-bar__logo:hover {
+  font-size: 2rem;
+}
+.nav-bar__intials {
+  background: inherit;
+  font-size: 1.5rem;
+  transition: all 300ms;
+  cursor: pointer;
+}
+.nav-bar__intials:hover {
+  color: #cbffe5;
+  font-size: 2rem;
+}
+.nav-bar__intials:active {
+  color: #00cccc;
 }
 .nav-bar__right {
   margin-right: 2rem;
