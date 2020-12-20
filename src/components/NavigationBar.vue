@@ -94,6 +94,7 @@ export default {
   margin-right: 2rem;
   background: inherit;
 }
+// Somthing
 .nav-bar__link {
   text-decoration: none;
   margin: 0.5rem;
