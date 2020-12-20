@@ -1,7 +1,9 @@
 <template>
   <div class="nav-bar">
     <div class="nav-bar__left">
-      <div class="nav-bar__logo">{ <span class="nav-bar__intials">HB</span> }</div>
+      <div class="nav-bar__logo">
+        { <span class="nav-bar__intials">HB</span> }
+      </div>
     </div>
     <div class="nav-bar__right">
       <a href="#about" class="nav-bar__link">
@@ -44,12 +46,13 @@ export default {
 <style lang="scss">
 .nav-bar {
   height: 3rem;
-  background: #101314;
+  //background: #101314;
+  background: #0b1a1a;
   position: fixed;
   top: 0;
   width: 100%;
   opacity: 0.8;
-  box-shadow: 8px -9px 11px 6px #000000;
+  box-shadow: 8px 0 11px 6px #001618;
   position: fixed;
   display: flex;
   padding-bottom: 0.5rem;
@@ -63,7 +66,8 @@ export default {
 .nav-bar__left {
   align-items: center;
   padding-left: 1rem;
-  background: #101314;
+  // background: #101314;
+  background: inherit;
   display: flex;
   align-self: center;
 }
@@ -71,7 +75,7 @@ export default {
   background: inherit;
   font-size: 1.5rem;
   transition: all 300ms;
-  cursor: pointer;
+  cursor: default;
 }
 .nav-bar__logo:hover {
   font-size: 2rem;
@@ -94,7 +98,6 @@ export default {
   margin-right: 2rem;
   background: inherit;
 }
-// Somthing
 .nav-bar__link {
   text-decoration: none;
   margin: 0.5rem;
