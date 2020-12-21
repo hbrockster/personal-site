@@ -2,7 +2,7 @@
   <div>
     <NavigationBar />
     <div class="main-content">
-      <HelloWorld msg="Hunter to Your Vue.js App" />
+      <Introduction />
       <HelloWorld msg="Hunter to Your Vue.js App" />
       <HelloWorld msg="Hunter to Your Vue.js App" />
       <HelloWorld id="hunter" msg="Hunter to Your Vue.js App" />
@@ -12,13 +12,15 @@
 
 <script>
 import HelloWorld from "./components/HelloWorld.vue";
+import Introduction from "./components/Introduction.vue";
 import NavigationBar from "./components/NavigationBar.vue";
 
 export default {
   name: "App",
   components: {
     HelloWorld,
-    NavigationBar
+    NavigationBar,
+    Introduction
   }
 };
 </script>
