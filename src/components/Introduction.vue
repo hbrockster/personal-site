@@ -13,12 +13,15 @@ export default {
 </script>
 <style lang="scss">
 .intro {
+  text-align: left;
   height: 60rem;
 }
 .intro__msg {
-  justify-content: left;
+  //color: #a5d1bc;
+  color: #cbffe5;
 }
 .intro__name {
-  font-size: 3rem;
+  font-size: 4rem;
+  font-weight: 600;
 }
 </style>

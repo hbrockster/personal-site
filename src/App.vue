@@ -28,6 +28,6 @@ export default {
 <style lang="scss">
 @import "@/assets/default.scss";
 .main-content {
-  padding: 1rem 1rem 1rem 1rem;
+  padding: 10rem 30%;
 }
 </style>
