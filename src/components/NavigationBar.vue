@@ -46,13 +46,14 @@ export default {
 <style lang="scss">
 .nav-bar {
   height: 3rem;
-  //background: #101314;
-  background: #0b1a1a;
+  background: #101314;
+  //background: #0b1a1a;
   position: fixed;
   top: 0;
   width: 100%;
-  opacity: 0.8;
-  box-shadow: 8px 0 11px 6px #001618;
+  opacity: 0.75;
+  //box-shadow: 8px 0 11px 6px #001618;
+  box-shadow: 8px 0 11px 6px #171818;
   position: fixed;
   display: flex;
   padding-bottom: 0.5rem;
@@ -66,8 +67,8 @@ export default {
 .nav-bar__left {
   align-items: center;
   padding-left: 1rem;
-  // background: #101314;
-  background: inherit;
+  background: #101314;
+  //background: inherit;
   display: flex;
   align-self: center;
 }
@@ -81,7 +82,6 @@ export default {
   font-size: 2rem;
 }
 .nav-bar__intials {
-  color: #cbffe5;
   background: inherit;
   font-size: 1.5rem;
   transition: all 300ms;
@@ -129,8 +129,8 @@ export default {
 }
 .nav-bar__button:hover {
   //background-color: #cbffe5;
-  //box-shadow: inset 0 0 0.7rem 0.4rem #cbffe5;
-  box-shadow: 0 0 0.5rem #cbffe5;
+  box-shadow: inset 0 0 0.7rem 0.4rem #cbffe5;
+  //box-shadow: 0 0 0.5rem #cbffe5;
   font-size: 0.9rem;
 }
 </style>
