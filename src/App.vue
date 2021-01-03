@@ -3,9 +3,11 @@
     <NavigationBar />
     <div class="main-content">
       <Introduction />
-      <HelloWorld msg="Hunter to Your Vue.js App" />
-      <HelloWorld msg="Hunter to Your Vue.js App" />
-      <HelloWorld id="hunter" msg="Hunter to Your Vue.js App" />
+      <HelloWorld id="about" msg="Hunter to Your Vue.js App" />
+      <HelloWorld id="skills" msg="Hunter to Your Vue.js App" />
+      <HelloWorld id="work-xp" msg="Hunter to Your Vue.js App" />
+      <HelloWorld id="projects" msg="Hunter to Your Vue.js App" />
+      <HelloWorld id="contact" msg="Hunter to Your Vue.js App" />
     </div>
   </div>
 </template>
@@ -27,6 +29,8 @@ export default {
 
 <style lang="scss">
 @import "@/assets/default.scss";
+@import "@/assets/buttons.scss";
+
 .main-content {
   padding: 10rem 30%;
 }

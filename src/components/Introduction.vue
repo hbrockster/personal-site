@@ -1,9 +1,16 @@
 <template>
-  <div id="Introduction" class="intro">
+  <div id="intro" class="intro">
     <div class="intro__msg">
       Hello, my name is
     </div>
     <div class="intro__name">Hunter Brock</div>
+    <p>
+      I am a full stack developer/software engineer based in Florida with a
+      large set of <a href="#skills">skills</a> in front and back end web
+      development.
+    </p>
+    <!-- <button class="button">Contact</button> -->
+    <a href="#contact" class="button">Contact</a>
   </div>
 </template>
 <script>
