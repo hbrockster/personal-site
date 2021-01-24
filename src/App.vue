@@ -3,27 +3,30 @@
     <NavigationBar />
     <div class="main-content">
       <Introduction />
-      <hr class="content__divider" />
-      <HelloWorld id="about" msg="Hunter to Your Vue.js App" />
+      <!-- <hr class="content__divider" /> -->
+      <About />
+      <!-- <HelloWorld id="about" msg="Hunter to Your Vue.js App" />
       <HelloWorld id="skills" msg="Hunter to Your Vue.js App" />
       <HelloWorld id="work-xp" msg="Hunter to Your Vue.js App" />
       <HelloWorld id="projects" msg="Hunter to Your Vue.js App" />
-      <HelloWorld id="contact" msg="Hunter to Your Vue.js App" />
+      <HelloWorld id="contact" msg="Hunter to Your Vue.js App" /> -->
     </div>
   </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
+// import HelloWorld from "./components/HelloWorld.vue";
 import Introduction from "./components/Introduction.vue";
 import NavigationBar from "./components/NavigationBar.vue";
+import About from "./components/About.vue";
 
 export default {
   name: "App",
   components: {
-    HelloWorld,
+    // HelloWorld,
     NavigationBar,
-    Introduction
+    Introduction,
+    About
   }
 };
 </script>
