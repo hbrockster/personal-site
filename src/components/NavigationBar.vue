@@ -74,9 +74,10 @@ export default {
 }
 .nav-bar__logo {
   background: inherit;
-  font-size: 1.5rem;
+  // font-size: 1.5rem;
   transition: all 300ms;
   cursor: default;
+  white-space: nowrap;
 }
 .nav-bar__logo:hover {
   font-size: 2rem;

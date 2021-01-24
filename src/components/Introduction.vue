@@ -21,7 +21,7 @@ export default {
 <style lang="scss">
 .intro {
   text-align: left;
-  height: 60rem;
+  height: 100vh;
 }
 .intro__msg {
   //color: #a5d1bc;

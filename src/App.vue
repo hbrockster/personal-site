@@ -3,6 +3,7 @@
     <NavigationBar />
     <div class="main-content">
       <Introduction />
+      <hr class="content__divider" />
       <HelloWorld id="about" msg="Hunter to Your Vue.js App" />
       <HelloWorld id="skills" msg="Hunter to Your Vue.js App" />
       <HelloWorld id="work-xp" msg="Hunter to Your Vue.js App" />
@@ -32,6 +33,6 @@ export default {
 @import "@/assets/buttons.scss";
 
 .main-content {
-  padding: 10rem 30%;
+  padding: 15rem 30%;
 }
 </style>
