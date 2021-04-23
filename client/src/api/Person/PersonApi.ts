@@ -3,8 +3,8 @@ import { getPerson } from "./calls/getPerson";
 import { IPersonApi } from "./IPersonApi";
 
 export class PersonApi implements IPersonApi {
-    getPerson = getPerson;
-    getName(): Promise<Name> {
-        throw new Error("Method not implemented.");
-    }    
+  getPerson = getPerson;
+  getName(): Promise<Name> {
+    throw new Error("Method not implemented.");
+  }
 }

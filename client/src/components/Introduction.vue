@@ -15,15 +15,13 @@
   </div>
 </template>
 <script lang="ts">
-import { IPersonApi } from "@/api/Person";
-export default {
-  name: "Introduction",
-  methods: {
-    async getPerson(): Promise<void> {
-      await IPersonApi.getPerson();
-    }
-  }
-};
+import { Options, Vue } from 'vue-class-component';
+// import { IPersonApi } from "@/api/Person";
+
+@Options({})
+export default class Introduction extends Vue {
+  msg!: string
+}
 </script>
 <style lang="scss">
 .intro {
