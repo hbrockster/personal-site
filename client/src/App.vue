@@ -16,6 +16,7 @@
 import HelloWorld from "./components/HelloWorld.vue";
 import Introduction from "./components/Introduction.vue";
 import NavigationBar from "./components/NavigationBar.vue";
+import { IPersonApi, PersonApi } from "@/api";
 
 export default {
   name: "App",

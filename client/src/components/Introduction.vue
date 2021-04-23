@@ -10,12 +10,19 @@
       development.
     </p>
     <!-- <button class="button">Contact</button> -->
-    <a href="#contact" class="button">Contact</a>
+    <!-- <a href="#contact" class="button">Contact</a> -->
+    <button class="button" @click="getPerson()">Contact</button>
   </div>
 </template>
-<script>
+<script lang="ts">
+import { IPersonApi } from "@/api/Person";
 export default {
-  name: "Introduction"
+  name: "Introduction",
+  methods: {
+    async getPerson(): Promise<void> {
+      await IPersonApi.getPerson();
+    }
+  }
 };
 </script>
 <style lang="scss">

@@ -1,4 +1,4 @@
-import { Person, Name } from "../../../models";
+import { Person, Name } from "../../models";
 
 export interface IPersonApi {
     getPerson(): Promise<Person>;
