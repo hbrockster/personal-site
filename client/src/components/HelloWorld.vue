@@ -7,12 +7,14 @@
 
 <script lang="ts">
 import { Component, Prop, Vue } from 'vue-property-decorator';
+import { PersonApi } from '@/api/Person';
 
-@Component
+@Component({})
 export default class HelloWorld extends Vue {
   @Prop() private msg!: string;
-
   getPerson(): void {
+    const personApi = new PersonApi()
+    personApi.getPerson();
     console.log("Getting a person");
   }
 }
