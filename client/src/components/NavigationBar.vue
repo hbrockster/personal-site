@@ -32,27 +32,21 @@
 </template>
 
 <script>
-export default {
-  name: "NavigationBar",
-  props: {
-    options: {
-      type: Array,
-      required: false
-    }
-  }
-};
+import { Component, Vue } from 'vue-property-decorator';
+
+@Component({})
+export default class NavigationBar extends Vue {
+}
 </script>
 
-<style lang="scss">
+<style>
 .nav-bar {
   height: 3rem;
   background: #101314;
-  //background: #0b1a1a;
   position: fixed;
   top: 0;
   width: 100%;
   opacity: 0.75;
-  //box-shadow: 8px 0 11px 6px #001618;
   box-shadow: 8px 0 11px 6px #171818;
   position: fixed;
   display: flex;
@@ -68,7 +62,6 @@ export default {
   align-items: center;
   padding-left: 1rem;
   background: #101314;
-  //background: inherit;
   display: flex;
   align-self: center;
 }
@@ -128,9 +121,7 @@ export default {
   font-family: inherit;
 }
 .nav-bar__button:hover {
-  //background-color: #cbffe5;
   box-shadow: inset 0 0 0.7rem 0.4rem #cbffe5;
-  //box-shadow: 0 0 0.5rem #cbffe5;
   font-size: 0.9rem;
 }
 </style>

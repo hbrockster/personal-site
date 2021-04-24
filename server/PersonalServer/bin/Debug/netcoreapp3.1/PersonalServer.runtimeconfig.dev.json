@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\hbroc\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\hbroc\\.nuget\\packages"
+    ]
+  }
+}

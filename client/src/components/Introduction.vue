@@ -10,21 +10,23 @@
       development.
     </p>
     <!-- <button class="button">Contact</button> -->
-    <a href="#contact" class="button">Contact</a>
+    <!-- <a href="#contact" class="button">Contact</a> -->
+    <button class="button" @click="getPerson()">Contact</button>
   </div>
 </template>
-<script>
-export default {
-  name: "Introduction"
-};
+<script lang="ts">
+import { Component, Vue } from 'vue-property-decorator';
+
+@Component({})
+export default class Introduction extends Vue {
+}
 </script>
-<style lang="scss">
+<style>
 .intro {
   text-align: left;
   height: 60rem;
 }
 .intro__msg {
-  //color: #a5d1bc;
   color: #cbffe5;
 }
 .intro__name {

@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "/kTzzxYO2qSoB9wqLFJ0dwFD+l1Dak4MyAcmiLxhTWcjMbbq0WAMqFlZPAVhyw6zRcCcySR2dS9Ru4YTZChhrQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\hbroc\\Documents\\Projects\\personal-site\\server\\PersonalServer\\PersonalServer.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\hbroc\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.10.13\\microsoft.visualstudio.azure.containers.tools.targets.1.10.13.nupkg.sha512"
+  ],
+  "logs": []
+}
