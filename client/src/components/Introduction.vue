@@ -3,7 +3,7 @@
     <div class="intro__msg">
       Hello, my name is
     </div>
-    <div class="intro__name">Hunter Brock</div>
+    <div class="intro__name">{{ name }}</div>
     <p>
       I am a full stack developer/software engineer based in Florida with a
       large set of <a href="#skills">skills</a> in front and back end web
@@ -21,10 +21,11 @@ import { Component, Vue } from 'vue-property-decorator';
 export default class Introduction extends Vue {
   name = '';
   created(): void {
-    console.log(this.name);
+    this.$personApi.getName().then(name => this.name = name.first + ' ' + name.last);
   }
   async getPerson(): Promise<void> {
     console.log(this.$personApi);
+    this.$personApi.getPerson().then(person => console.log(person));
   }
 }
 </script>
