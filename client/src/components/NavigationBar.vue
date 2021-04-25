@@ -26,7 +26,7 @@
         <span class="nav-bar__link-number">05. </span>
         Contact
       </a>
-      <button class="nav-bar__button">Resume</button>
+      <button class="fancy-button fancy-button-bars">Resume</button>
     </div>
   </div>
 </template>

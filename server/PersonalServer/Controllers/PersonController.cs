@@ -15,17 +15,15 @@ namespace PersonalServer.Controllers
     {
         // GET: api/<ValuesController>
         [HttpGet]
-        public JsonResult Get()
+        public Person Get()
         {
-            return new JsonResult(
-                new Person()
-                {
-                    Name = new Name() { First = "Hunter", Middle = "Craig", Last = "Brock" },
-                    CellPhoneNumber = "8506123487",
-                    EmailAddress = "hbrockster13@gmail.com",
-                    Id = new Guid()
-                }
-            );
+            return new Person()
+            {
+                Name = new Name() { First = "Hunter", Middle = "Craig", Last = "Brock" },
+                CellPhoneNumber = "8506123487",
+                EmailAddress = "hbrockster13@gmail.com",
+                Id = new Guid()
+            };
         }
         [HttpGet("name")]
         public JsonResult GetName()

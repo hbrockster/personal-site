@@ -13,8 +13,11 @@ declare module 'vue/types/vue' {
   }
 }
 
+Vue.prototype.$personApi = personApi;
+
+console.log(personApi);
+
 new Vue({
   router,
   render: h => h(App)
-}).$mount('#app').$personApi = personApi;
-
+}).$mount('#app');

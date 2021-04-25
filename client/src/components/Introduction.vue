@@ -11,20 +11,28 @@
     </p>
     <!-- <button class="button">Contact</button> -->
     <!-- <a href="#contact" class="button">Contact</a> -->
-    <button class="button" @click="getPerson()">Contact</button>
+    <button class="fancy-button fancy-button-bars" @click="getPerson()">Contact</button>
   </div>
 </template>
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
 
-@Component({})
+@Component({ })
 export default class Introduction extends Vue {
+  name = '';
+  created(): void {
+    console.log(this.name);
+  }
+  async getPerson(): Promise<void> {
+    console.log(this.$personApi);
+  }
 }
 </script>
 <style>
 .intro {
   text-align: left;
   height: 60rem;
+  margin: 20rem 10rem;
 }
 .intro__msg {
   color: #cbffe5;
@@ -33,4 +41,22 @@ export default class Introduction extends Vue {
   font-size: 4rem;
   font-weight: 600;
 }
+.button {
+    background-color: transparent;
+    border: 0.125rem solid #4caf50;
+    border-radius: 0.2rem;
+    padding: 0.8rem 1.5rem;
+    text-align: center;
+    display: inline-block;
+    font-size: 0.8rem;
+    color: #75ebb0;
+    cursor: pointer;
+    transition: all 300ms;
+    font-family: inherit;
+    text-decoration: none;
+  }
+  .button:hover {
+    box-shadow: inset 0 0 0.7rem 0.4rem #cbffe5;
+    font-size: 0.9rem;
+  }
 </style>
