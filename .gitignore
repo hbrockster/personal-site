@@ -2,3 +2,5 @@ node_modules
 server/PersonalServer/bin
 server/PersonalServer/obj
 server/PersonalServer/.vs
+/server/PersonalServer/bin/Debug/netcoreapp3.1/PersonalServer.dll
+/server/PersonalServer/bin/Debug/netcoreapp3.1/PersonalServer.exe
