@@ -9,23 +9,22 @@
       large set of <a href="#skills">skills</a> in front and back end web
       development.
     </p>
-    <!-- <button class="button">Contact</button> -->
-    <!-- <a href="#contact" class="button">Contact</a> -->
-    <button class="fancy-button fancy-button-bars" @click="getPerson()">Contact</button>
+    <a href="#contact" class="fancy-button fancy-button-bars">Contact</a>
   </div>
 </template>
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
+import { Person } from '@/models';
 
 @Component({ })
 export default class Introduction extends Vue {
-  name = '';
+  person = new Person();
   created(): void {
-    this.$personApi.getName().then(name => this.name = name.first + ' ' + name.last);
+    this.$personApi.getPerson().then(person => this.person = person);
   }
-  async getPerson(): Promise<void> {
-    console.log(this.$personApi);
-    this.$personApi.getPerson().then(person => console.log(person));
+  get name(): string {
+    const name = this.person?.name;
+    return name?.first + ' ' + name?.last
   }
 }
 </script>
