@@ -5,6 +5,7 @@ export class Person {
   cellPhoneNumber: string | null = null;
   emailAddress: string | null = null;
   iD: string | null = null;
+  bio?: string | null = null;
 
   constructor(init?: Partial<Person>) {
     Object.assign(this, init);

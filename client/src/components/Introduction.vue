@@ -4,16 +4,13 @@
       Hello, my name is
     </div>
     <div class="intro__name">{{ name }}</div>
-    <p>
-      I am a full stack developer/software engineer based in Florida with a
-      large set of <a href="#skills">skills</a> in front and back end web
-      development.
-    </p>
+    <div class="intro__title">Software Engineer</div>
+    <p>{{ person.bio }}</p>
     <a href="#contact" class="fancy-button fancy-button-bars">Contact</a>
   </div>
 </template>
 <script lang="ts">
-import { Component, Vue } from 'vue-property-decorator';
+import { Component, Provide, Vue } from 'vue-property-decorator';
 import { Person } from '@/models';
 
 @Component({ })
@@ -34,10 +31,20 @@ export default class Introduction extends Vue {
   height: 60rem;
   margin: 20rem 10rem;
 }
+.intro p {
+  margin-bottom: 2rem;
+  max-width: 60%;
+  line-height: 1.5rem
+}
 .intro__msg {
-  color: #cbffe5;
+  color: #3c7c5c;
 }
 .intro__name {
+  font-size: 4rem;
+  font-weight: 600;
+  color: #64ebd4;
+}
+.intro__title {
   font-size: 4rem;
   font-weight: 600;
 }
@@ -54,9 +61,10 @@ export default class Introduction extends Vue {
     transition: all 300ms;
     font-family: inherit;
     text-decoration: none;
+    
   }
-  .button:hover {
-    box-shadow: inset 0 0 0.7rem 0.4rem #cbffe5;
-    font-size: 0.9rem;
-  }
+.button:hover {
+  box-shadow: inset 0 0 0.7rem 0.4rem #cbffe5;
+  font-size: 0.9rem;
+}
 </style>
