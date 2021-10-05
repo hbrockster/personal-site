@@ -29,7 +29,7 @@ export default class Introduction extends Vue {
 .intro {
   text-align: left;
   height: 60rem;
-  margin: 20rem 10rem;
+  margin: 10rem 10rem;
 }
 .intro p {
   margin-bottom: 2rem;
