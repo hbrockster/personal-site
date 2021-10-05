@@ -28,4 +28,53 @@ export default class App extends Vue {
     color: #67ff88;
     font-size: 16px;
 }
+.fancy-button {
+  position: relative;
+  padding: 1em 1.5em;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+  font-size: 18px;
+  top: 0.3rem;
+}
+.fancy-button-bars {
+    color: #67ff88;
+}
+.fancy-button-bars::after,
+.fancy-button-bars::before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 20%;
+  height: 20%;
+  border: 2px solid;
+  transition: all 0.6s ease;
+  border-radius: 2px;
+}
+.fancy-button-bars::after {
+  bottom: 0;
+  right: 0;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  border-bottom-color: #4caf50;
+  border-right-color: #4caf50;
+}
+.fancy-button-bars::before {
+  top: 0;
+  left: 0;
+  border-bottom-color: transparent;
+  border-right-color: transparent;
+  border-top-color: #4caf50;
+  border-left-color: #4caf50;
+}
+.fancy-button-bars:hover:after,
+.fancy-button-bars:hover:before {
+  border-bottom-color: #4caf50;
+  border-right-color: #4caf50;
+  border-top-color: #4caf50;
+  border-left-color: #4caf50;
+  width: 100%;
+  height: 100%;
+}
 </style>
