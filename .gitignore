@@ -1,4 +1,4 @@
 /node_modules
-/server/PersonalServer/bin
-/server/PersonalServer/obj
-/server/PersonalServer/.vs
+/server/PersonalServer/bin/
+/server/PersonalServer/obj/
+/server/PersonalServer/.vs/
