@@ -10,7 +10,7 @@
   </div>
 </template>
 <script lang="ts">
-import { Component, Provide, Vue } from 'vue-property-decorator';
+import { Component, Vue } from 'vue-property-decorator';
 import { Person } from '@/models';
 
 @Component({ })
@@ -28,8 +28,7 @@ export default class Introduction extends Vue {
 <style>
 .intro {
   text-align: left;
-  height: 60rem;
-  margin: 10rem 10rem;
+  margin: 10%;
 }
 .intro p {
   margin-bottom: 2rem;

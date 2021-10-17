@@ -2,6 +2,7 @@
   <div id="app">
     <NavigationBar />
     <Introduction />
+    <Section name="Skills" message="Hunter was Here" title="Hunter Was also here"/>
   </div>
 </template>
 
@@ -9,8 +10,9 @@
 import { Component, Vue } from 'vue-property-decorator';
 import NavigationBar from '@/components/NavigationBar.vue';
 import Introduction from '@/components/Introduction.vue';
+import Section from '@/components/Section.vue';
 
-@Component({ components: { NavigationBar, Introduction }})
+@Component({ components: { NavigationBar, Introduction, Section }})
 export default class App extends Vue {
 }
 </script>
