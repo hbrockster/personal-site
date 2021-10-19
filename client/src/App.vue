@@ -2,7 +2,13 @@
   <div id="app">
     <NavigationBar />
     <Introduction />
-    <Section name="Skills" message="Hunter was Here" title="Hunter Was also here"/>
+    <Section name="Skills" number="01.">
+      <template>
+        <p></p>
+      </template>
+    </Section>
+    <Section class="section-reset" name="Skills"  number="01."/>
+    <Section name="Skills" number="01."/>
   </div>
 </template>
 
@@ -18,6 +24,9 @@ export default class App extends Vue {
 </script>
 
 <style>
+body { 
+  margin: 0;
+}
 #app {
     font-family: Space Mono, Avenir, Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;

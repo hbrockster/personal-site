@@ -98,6 +98,9 @@ export default class NavigationBar extends Vue {
   transition: all 300ms;
   background: inherit;
 }
+.nav-bar__link span{
+  font-family: 'Roboto Mono';
+}
 .nav-bar__link-number {
   color: #75ebb0;
   font-size: 0.8rem;
