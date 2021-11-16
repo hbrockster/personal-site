@@ -1,0 +1,11 @@
+{
+    "name": "personal-site",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+      "serve": "run-p serve:client serve:server",
+      "serve:client": "vue-cli-service serve",
+      "serve:server": "dotnet run --project ./server/PersonalServer/PersonalServer.csproj"
+    }
+  }
+  

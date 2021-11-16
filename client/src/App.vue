@@ -2,11 +2,7 @@
   <div id="app">
     <NavigationBar />
     <Introduction />
-    <Section name="Skills" number="01.">
-      <template>
-        <p></p>
-      </template>
-    </Section>
+    <About/>
     <Section class="section-reset" name="Skills"  number="01."/>
     <Section name="Skills" number="01."/>
   </div>
@@ -17,8 +13,9 @@ import { Component, Vue } from 'vue-property-decorator';
 import NavigationBar from '@/components/NavigationBar.vue';
 import Introduction from '@/components/Introduction.vue';
 import Section from '@/components/Section.vue';
+import About from '@/components/About.vue';
 
-@Component({ components: { NavigationBar, Introduction, Section }})
+@Component({ components: { NavigationBar, Introduction, Section, About }})
 export default class App extends Vue {
 }
 </script>
