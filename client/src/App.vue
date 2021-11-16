@@ -3,6 +3,7 @@
     <NavigationBar />
     <Introduction />
     <About/>
+    <Skills/>
     <Section class="section-reset" name="Skills"  number="01."/>
     <Section name="Skills" number="01."/>
   </div>
@@ -14,8 +15,9 @@ import NavigationBar from '@/components/NavigationBar.vue';
 import Introduction from '@/components/Introduction.vue';
 import Section from '@/components/Section.vue';
 import About from '@/components/About.vue';
+import Skills from '@/components/Skills.vue';
 
-@Component({ components: { NavigationBar, Introduction, Section, About }})
+@Component({ components: { NavigationBar, Introduction, Section, About, Skills }})
 export default class App extends Vue {
 }
 </script>

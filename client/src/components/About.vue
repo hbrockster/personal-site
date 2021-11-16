@@ -14,7 +14,7 @@
         </p>
       </template>
   </Section>
-</template>s
+</template>
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
 import Section from '@/components/Section.vue';
@@ -23,5 +23,3 @@ import Section from '@/components/Section.vue';
 export default class About extends Vue {
 }
 </script>
-<style>
-</style>
