@@ -2,6 +2,10 @@
   <div id="app">
     <NavigationBar />
     <Introduction />
+    <About/>
+    <Skills/>
+    <Section class="section-reset" name="Skills"  number="01."/>
+    <Section name="Skills" number="01."/>
   </div>
 </template>
 
@@ -9,13 +13,19 @@
 import { Component, Vue } from 'vue-property-decorator';
 import NavigationBar from '@/components/NavigationBar.vue';
 import Introduction from '@/components/Introduction.vue';
+import Section from '@/components/Section.vue';
+import About from '@/components/About.vue';
+import Skills from '@/components/Skills.vue';
 
-@Component({ components: { NavigationBar, Introduction }})
+@Component({ components: { NavigationBar, Introduction, Section, About, Skills }})
 export default class App extends Vue {
 }
 </script>
 
 <style>
+body { 
+  margin: 0;
+}
 #app {
     font-family: Space Mono, Avenir, Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;

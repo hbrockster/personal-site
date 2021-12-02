@@ -26,7 +26,7 @@
         <span class="nav-bar__link-number">05. </span>
         Contact
       </a>
-      <button class="fancy-button fancy-button-bars">Resume</button>
+      <button data-hover="Download" class="nav_bar-button"><div>Resume</div></button>
     </div>
   </div>
 </template>
@@ -98,6 +98,9 @@ export default class NavigationBar extends Vue {
   transition: all 300ms;
   background: inherit;
 }
+.nav-bar__link span{
+  font-family: 'Roboto Mono';
+}
 .nav-bar__link-number {
   color: #75ebb0;
   font-size: 0.8rem;
@@ -107,21 +110,43 @@ export default class NavigationBar extends Vue {
   color: #cbffe5;
   font-size: 1.2rem;
 }
-.nav-bar__button {
-  background-color: transparent;
-  border: 0.125rem solid #4caf50;
-  border-radius: 0.2rem;
-  padding: 0.8rem 1.5rem;
-  text-align: center;
-  display: inline-block;
-  font-size: 0.8rem;
-  color: #75ebb0;
+
+.nav_bar-button:hover {
   cursor: pointer;
-  transition: all 300ms;
-  font-family: inherit;
+  background-color: #1e4632;
 }
-.nav-bar__button:hover {
-  box-shadow: inset 0 0 0.7rem 0.4rem #cbffe5;
-  font-size: 0.9rem;
+.nav_bar-button {
+  background: transparent; 
+  outline: none;
+  position: relative;
+  border: 2px solid #4caf50;
+  padding: 15px 30px;
+  overflow: hidden;
+  border-radius: 0.2rem;
+  transition: all 300ms;
+}
+.nav_bar-button:hover:before {
+  opacity: 1; 
+  transform: translate(0,0);
+}
+.nav_bar-button:before {
+  content: attr(data-hover);
+  position: absolute;
+  top: 1.1em; left: 0;
+  width: 100%;
+  font-size: .9rem;
+  opacity: 0;
+  transform: translate(-100%,0);
+  transition: all .3s ease-in-out;
+}
+.nav_bar-button:hover div {
+  opacity: 0;
+  transform: translate(100%,0);
+}
+.nav_bar-button div {
+  font-size: .9rem;
+  transition: transform .3s ease-in-out;
+  background: inherit;
+   background-color: inherit;
 }
 </style>
