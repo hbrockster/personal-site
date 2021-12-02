@@ -5,7 +5,42 @@
   >
       <template>
         <div class="skills-list">
-          <ul>
+          <Skill
+            title="VueJs"
+            description="Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+            when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+            experience="2"
+            imageUrl="vue.png"
+            />
+            <Skill
+            title="VueJs"
+            description="Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+            when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+            experience="2"
+            imageUrl="vue.png"
+            />
+            <Skill
+            title="VueJs"
+            description="Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+            when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+            experience="2"
+            imageUrl="vue.png"
+            />
+            <Skill
+            title="VueJs"
+            description="Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+            when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+            experience="2"
+            imageUrl="vue.png"
+            />
+            <Skill
+            title="VueJs"
+            description="Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+            when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+            experience="2"
+            imageUrl="vue.png"
+            />
+          <!-- <ul>
               <li>VueJs</li>
               <li>Javascript</li>
               <li>TypeScript</li>
@@ -40,7 +75,7 @@
               <li>PowerShell</li>
               <li>JavaFx</li>
               <li>Entity Framework</li>
-          </ul>
+          </ul> -->
         </div>
       </template>
   </Section>
@@ -48,8 +83,9 @@
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
 import Section from '@/components/Section.vue';
+import Skill from '@/components/Skill.vue';
 
-@Component({ components: { Section, }})
+@Component({ components: { Section, Skill}})
 export default class Skills extends Vue {
 }
 </script>

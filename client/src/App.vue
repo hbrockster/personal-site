@@ -4,8 +4,8 @@
     <Introduction />
     <About/>
     <Skills/>
-    <Section class="section-reset" name="Skills"  number="01."/>
-    <Section name="Skills" number="01."/>
+    <!-- <Section class="section-reset" name="Skills"  number="01."/>
+    <Section name="Skills" number="01."/> -->
   </div>
 </template>
 
