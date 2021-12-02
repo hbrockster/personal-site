@@ -55,12 +55,14 @@ export default class Skills extends Vue {
 </script>
 <style>
 .skills-list {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
 }
 li {
-    padding: 0.5rem;
+    padding: 1.5rem 1.5rem 1.5rem 0.5rem;
+    font-size: 1.25rem;
 }
 ul { 
-  padding: 0 4rem;
+  /* padding: 0 5rem; */
 }
 </style>

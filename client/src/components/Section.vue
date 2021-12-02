@@ -21,7 +21,7 @@ export default class Introduction extends Vue {
 <style>
 .section {
   text-align: left;
-  padding: 10%;
+  margin: 15% 10%;
 }
 .section p {
   margin-bottom: 2rem;
